@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mySchedule</title>
+  <link rel="stylesheet" href="mySchedule.css" type="text/css">
+</head>
+<body>
+  <div class="mySchedule-buttons">
+    <button onclick="openUploadWindow()">시간표 등록/변경</button>
+    <button onclick="openchangeWindow()">시간표 수정</button>
+  </div>
+
+  <div class="content">
+    <h1>내 시간표</h1>
+  </div>
+  <hr style="width: 50%; margin-top: 0;">
+  <div id="schedule-container"></div>
+  <script src="myschedule.js"></script>
+
+  <script>
+    function openUploadWindow() {
+      window.open("UploadForm/imageUpload.html", "이미지 등록", "width=500,height=300");
+    }
+    function openchangeWindow()
+    {
+      window.open("UploadForm/changetable.html", "시간표 수정", "width=600,height=800");
+    }
+  </script>
+  
+</body>
+</html>

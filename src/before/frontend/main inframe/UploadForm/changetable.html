@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시간표 수정</title>
+  <link rel="stylesheet" href="changetable.css" type="text/css">
+</head>
+<body>
+  <h2>시간표 수정</h2>
+  <div id="app">
+    <!-- 학생 정보와 수업 목록 출력 -->
+    
+    <div class="card">
+      <h2>학생 정보</h2>
+      <p>이름: <span id="studentName"></span></p>
+      <p>학번: <span id="studentNumber"></span></p>
+    </div>
+
+    <div class="card">
+      <h2>수업 목록</h2>
+      <div id="scheduleList"></div>
+    </div>
+    
+    <!-- 새 수업 추가 폼 -->
+    <div class="card">
+      <h2>새 수업 추가</h2>
+      <input type="text" id="newClassName" placeholder="과목명">
+      <div id="newClassDays" class="day-buttons"></div>
+      <input type="time" id="newStartTime">
+      <input type="time" id="newEndTime">
+      <input type="text" id="newLocation" placeholder="위치">
+      <button onclick="addClass()">추가</button>
+    </div>
+    <button id="saveScheduleButton">시간표 수정완료</button>
+  </div>
+  <script src="changetable.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>collab</title>
+  <link rel="stylesheet" href="collab.css">
+</head>
+<body>
+  <div class="content">
+    <h1>학생 공통 빈 시간대 조회</h1>
+  </div>
+  <hr style="width: 50%; margin-top: 0;">
+  <div id="schedule-container"></div>
+
+  <div class="schedule-container">
+    <div class="form-group">
+      <div class="input-group">
+        <label for="student-names">학생 이름 입력 (쉼표로 구분):</label>
+        <input type="text" id="student-names" placeholder="예: 이헌성, 김태경">
+      </div>
+      <button onclick="findCommonFreeTime()">공통 빈 시간대 찾기</button>
+    </div>
+    <div id="result">
+      <div id="schedule-table-container"></div>
+    </div>
+  </div>
+  <script src="collab.js"></script>
+</body>
+</html>
